@@ -1,26 +1,15 @@
 body {
-  text-align: justify;
-  border: 1px solid black;
-  background-color: lightblue;
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 80px;
-  
+text-align:justify;
+border: 1px solid black;
+background-color: lightblue;
+padding-top: 50px;
+padding-right: 30px;
+padding-bottom: 50px;
+padding-left: 80px;
 }
 
-a:link, a:visited {
-    background-color: #f44336;
-    color: white;
-    padding: 14px 25px;
-    text-align: center; 
-    text-decoration: none;
-    display: inline-block;
-  }
-  
-  a:hover, a:active {
-    background-color: red;
-  }
+
+
 h1 {
 color:rgb(3, 1, 8);
 background-blend-mode:rgb(167, 156, 233)
@@ -32,7 +21,6 @@ color: yellow;
 font-family:sans-serif;
 font-size: 20px;
 letter-spacing: 3px;
-direction: rtl;
 font-style: italic;
 font-variant: small-caps;
 }
@@ -41,29 +29,33 @@ color:rgb(113, 133, 74)
 }
 
 #customers {
-    text-decoration= none;
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
+text-decoration= none;
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
   
-  #customers td, #customers th {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
+#customers td, #customers th {
+border: 1px solid #ddd;
+padding: 8px;
+}
   
-  #customers tr:nth-child(even){background-color: #f2f2f2;}
+#customers tr:nth-child(even){background-color: #f2f2f2;}
   
-  #customers tr:hover {background-color: #ddd;}
+#customers tr:hover {background-color: #ddd;}
   
-  #customers th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #4CAF50;
-    color: white;
-  }
+#customers th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: #4CAF50;
+color: white;
+}
 
 .color_test{
 color: red;
+}
+
+button{
+background-image: url("hello.png");
 }
