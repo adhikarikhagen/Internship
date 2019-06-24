@@ -1,0 +1,37 @@
+@mixin desktop {
+    @media (min-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin all_buttons {
+    color: #fff;
+    background-color: $bg_btn;
+    border: none;
+    padding: 5px 8px;
+    @include desktop() {
+        padding: 10px 20px;
+    }
+}
+
+@mixin section_heading {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    @include desktop() {
+        font-size: 40px;
+        font-weight: 600;
+        padding: 20px;
+    }
+}
+
+@mixin section_description {
+    text-align: center;
+    line-height: 20px;
+}
