@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class=rows>
+            <p>Name:</p>
+            <p id="name"></p>
+        </div>
+        <div class=rows>
+            <p>Email:</p>
+            <p id="email"></p>
+        </div>
+        <div class=rows>
+            <p>Phone:</p>
+            <p id="phone"></p>
+        </div>
+        <div class=rows>
+            <p>Password:</p>
+            <p id="password"></p>
+        </div>
+    </div>
+
+
+    <script>
+        var name = localStorage.getItem("Name");
+        var email = localStorage.getItem("Email");
+        var phone = localStorage.getItem("Phone");
+        var password = localStorage.getItem("Password");
+
+        document.getElementById("email").innerHTML = email;
+        document.getElementById("name").innerHTML = name;
+        document.getElementById("phone").innerHTML = phone;
+        document.getElementById("password").innerHTML = password;
+    </script>
+</body>
+
+</html>
