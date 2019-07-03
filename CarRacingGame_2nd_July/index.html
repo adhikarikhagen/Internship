@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/all.min.css" />
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="game">
+                <div class="col-md-3 aside">
+                    <input type="text" name="dfasdfadfddfasd" id="score" value="0" />
+                    <div class="scorecard">Score:<span id="scorecard">0</span></div>
+                    <div class="gearcard">Gear: <span id="gearcard">0</span></div>
+                </div>
+                <div class="row col-md-6 bg-black">
+                    <div class="container">
+                        <div class="col road_outline1" id="outline_id">
+                        </div>
+                        <div class="col-md-2 lane lane1">
+                            <div>
+                                <img src=" ./images/car01.png " alt=" " id="cops1" />
+                            </div>
+                        </div>
+                        <div class="col divider_container1" id="divider1_id">
+                            <div class="divider"></div>
+                            <div class="divider"></div>
+                            <div class="divider"></div>
+                        </div>
+                        <div class=" col-md-2 lane">
+                            <div>
+                                <img src=" ./images/car01.png " alt=" " id="cops2" />
+                            </div>
+                        </div>
+                        <div class="col divider_container2" id="divider2_id">
+                            <div class="divider"></div>
+                            <div class="divider"></div>
+                            <div class="divider"></div>
+                        </div>
+
+                        <div class=" col-md-2 lane lane3">
+                            <div>
+                                <img src=" ./images/car01.png" alt=" " id="cops3" />
+                            </div>
+                        </div>
+                        <div class="col road_outline2" id="outline_id">
+                        </div>
+                        <div class="car " id="canvas">
+                            <img src="./images/car.png " alt=" " />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <section class="play-btn">
+                <button type="button" class="btn bg-lg" id="playbtn" onclick="startPlay()">Play</button>
+            </section>
+
+        </div>
+
+        <script src="./script.js "></script>
+    </body>
+
+</html>

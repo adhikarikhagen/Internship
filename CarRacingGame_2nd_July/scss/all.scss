@@ -1,0 +1,141 @@
+@import "./reset";
+html {
+     text-align: center;
+}
+
+.wrapper {
+     background-image: url('../images/bg.png');
+}
+
+.game {
+     overflow: hidden;
+}
+
+.container {
+     position: relative;
+     display: flex;
+     margin: auto;
+     .car {
+          position: absolute;
+          bottom: 10px;
+          left: 304px;
+          box-shadow: 0 0 5px 5px;
+          img {
+               max-width: 100%;
+               max-height: 100%;
+               height: 100px;
+               width: 50px;
+          }
+     }
+     .lane {
+          position: relative;
+          img {
+               max-width: 100%;
+               max-height: 100%;
+               height: 100px;
+               width: 100px;
+               position: absolute;
+               left: 35px;
+               top: -150px;
+          }
+     }
+}
+
+.aside {
+     margin: 250px 10px 0 10px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     input {
+          outline: none;
+          border: none;
+          background-color: rgba(25, 250, 25, 0.835);
+          color: rgb(240, 110, 110);
+          display: none;
+     }
+     .scorecard,
+     .gearcard {
+          border: 1px solid turquoise;
+          background-color: khaki;
+          color: rgba(218, 49, 153, 0.705);
+          font-weight: bold;
+          margin: 20px 0;
+          font-size: 40px;
+          border-radius: 5px;
+     }
+}
+
+.lane {
+     height: 500px;
+     margin: 20px 10px 0 10px;
+     background-color: rgb(27, 25, 25);
+}
+
+.lane1 {
+     margin-left: 0;
+}
+
+.lane3 {
+     margin-right: 0;
+}
+
+.road_outline1 {
+     background-color: rgb(236, 225, 69);
+     width: 20px;
+     margin-top: 20px;
+     height: 500px;
+}
+
+.road_outline2 {
+     background-color: rgb(236, 225, 69);
+     width: 20px;
+     margin-top: 20px;
+     height: 500px;
+}
+
+.divider_container1 {
+     position: absolute;
+     margin: 0;
+     padding: 0;
+     left: 225px;
+     top: 50px;
+     background-color: rgb(236, 225, 69);
+     .divider {
+          display: flex;
+          flex-direction: column;
+          height: 15px;
+          width: 20px;
+          margin: 100px 0;
+          background-color: #fff;
+     }
+}
+
+.divider_container2 {
+     position: absolute;
+     margin: 0;
+     padding: 0;
+     left: 435px;
+     top: 50px;
+     background-color: rgb(236, 225, 69);
+     .divider {
+          display: flex;
+          flex-direction: column;
+          height: 15px;
+          width: 20px;
+          margin: 100px 0;
+          background-color: #fff;
+     }
+}
+
+.play-btn {
+     margin: 10px;
+     button {
+          padding: 15px 60px;
+          color: black;
+          font-size: 30px;
+          background-color: rgba(212, 200, 24, 0.5);
+          font-weight: bold;
+     }
+     .button:hover {
+          background-color: rgba(70, 149, 223, 0.233);
+          color: rgb(212, 200, 24);
+     }
+}
